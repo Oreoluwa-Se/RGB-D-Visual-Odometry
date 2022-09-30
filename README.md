@@ -110,7 +110,7 @@ To run the project
 3) In terminal 2: ./tools/robot_env.sh
 4) In terminal 3: ./tools/ros_bridge.sh
 5) ros2 launch my_slam vo.launch.py
-3) In new terminal: ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/robot/cmd_vel
+6) In new terminal: ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/robot/cmd_vel
 ```
 
 ## References
