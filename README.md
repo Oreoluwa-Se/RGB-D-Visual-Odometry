@@ -32,7 +32,7 @@ image was used instead**. However, during testing there the topic
 producing the depth image was inconsistent
 
 <!-- ![Overall%20System.png](vertopal_d86a2d00c2214e7982182c69df2581e2/Overall%20System.png) -->
-<div align=center><img src="./images/Overall System.png" width="60%"/></div>
+<div align=center><img src="./images/Overall System.png" width="80%"/></div>
 
 ## System Brief:
 
@@ -63,7 +63,7 @@ producing the depth image was inconsistent
     (<https://www.youtube.com/watch?v=uHbRKvD8TWg&t=7s>)
 
 ## Ros Overview:
-<div align=center><img src="./images/Ros-view.png" width="60%"/></div>
+<div align=center><img src="./images/Ros-view.png" width="70%"/></div>
 
 **Image above shows the overall workflow in Ros. The backend system is
 not implemented as a node since it didn\'t use any ros components. It
@@ -84,7 +84,7 @@ operates as a singular external thread.**
         and image cannot be updated real-time.
 
 ## Future Work: System Flow With Loop Closure
-<div align=center><img src="./images/WithLoopClosure.png" width="60%"/></div>
+<div align=center><img src="./images/WithLoopClosure.png" width="80%"/></div>
 
 As mentioned earlier, loop closure allows for global landmark and pose
 estimation when a loop has been detected. A loop is detected when two
@@ -96,7 +96,7 @@ depending on voabulary size. To this end I propose a new method of
 describing image point locations for slam.
 
 <!-- ![Feature%20Extraction.png](vertopal_d86a2d00c2214e7982182c69df2581e2/FeatureExtraction.png) -->
-<div align=center><img src="./images/FeatureExtraction.png" width="60%"/></div>
+<div align=center><img src="./images/FeatureExtraction.png"/></div>
 
 Following this, a combination of hastables with fixed size and cosine
 similarity to calculate vector similarity can be used to calculate image
