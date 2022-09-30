@@ -9,7 +9,7 @@ the monocular camera case. The system here does not include a remapping
 stage \[loop closure\] which optimizes the entire map when a location
 has occured twice.
 
-### RGB-D Cameras
+## RGB-D Cameras
 
 As mentioned, the RGB-D camera takes an active approach to measuring
 pixel depth. The basic idea is the camera emits a light beam to the
@@ -34,7 +34,7 @@ producing the depth image was inconsistent
 <!-- ![Overall%20System.png](vertopal_d86a2d00c2214e7982182c69df2581e2/Overall%20System.png) -->
 <div align=center><img src="./images/Overall System.png" width="60%"/></div>
 
-### System Brief:
+## System Brief:
 
 **Frontend Sequence:**
 
@@ -62,14 +62,14 @@ producing the depth image was inconsistent
     environment. For more information, visit
     (<https://www.youtube.com/watch?v=uHbRKvD8TWg&t=7s>)
 
-### Ros Overview:
+## Ros Overview:
 <div align=center><img src="./images/Ros-view.png" width="60%"/></div>
 
 **Image above shows the overall workflow in Ros. The backend system is
 not implemented as a node since it didn\'t use any ros components. It
 operates as a singular external thread.**
 
-### Problems with Current Method:
+## Problems with Current Method:
 
 -   Limited Speed:
     -   Cameras cannot capture high speed motion, image becomes blurred
@@ -83,7 +83,7 @@ operates as a singular external thread.**
         environment, and methods like Bag of words when used to describe
         and image cannot be updated real-time.
 
-### Future Work: System Flow With Loop Closure
+## Future Work: System Flow With Loop Closure
 <div align=center><img src="./images/WithLoopClosure.png" width="60%"/></div>
 
 As mentioned earlier, loop closure allows for global landmark and pose
@@ -113,9 +113,9 @@ To run the project
 3) In new terminal: ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/robot/cmd_vel
 ```
 
-### References
+## References
 
-##### Visual SLAM: From Theory to Practice (<https://github.com/gaoxiang12/slambook-en>) {#visual-slam-from-theory-to-practice-httpsgithubcomgaoxiang12slambook-en}
+### Visual SLAM: From Theory to Practice (<https://github.com/gaoxiang12/slambook-en>) {#visual-slam-from-theory-to-practice-httpsgithubcomgaoxiang12slambook-en}
 
 The section breakdowns are borrowed from Chapter 13, modified to match
 the RGB-D system, and include more advanced outlier methods.
