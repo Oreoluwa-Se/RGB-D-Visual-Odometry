@@ -96,11 +96,22 @@ depending on voabulary size. To this end I propose a new method of
 describing image point locations for slam.
 
 <!-- ![Feature%20Extraction.png](vertopal_d86a2d00c2214e7982182c69df2581e2/FeatureExtraction.png) -->
-<div align=center><img src="./FeatureExtraction.png" width="60%"/></div>
+<div align=center><img src="./images/FeatureExtraction.png" width="60%"/></div>
 
 Following this, a combination of hastables with fixed size and cosine
 similarity to calculate vector similarity can be used to calculate image
 similarity. This should allow for realtime update. **More research to be done**
+
+## Run the example
+To run the project
+```
+1) Ensure all tools have been cmake-installed.
+2) In terminal 1: ./tools/install.sh
+3) In terminal 2: ./tools/robot_env.sh
+4) In terminal 3: ./tools/ros_bridge.sh
+5) ros2 launch my_slam vo.launch.py
+3) In new terminal: ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args --remap cmd_vel:=/robot/cmd_vel
+```
 
 ### References
 
@@ -129,9 +140,3 @@ Dowload and install instructions can be found
 
 Dowload and install instructions can be found
 [here](https://github.com/RainerKuemmerle/g2o).
-:::
-
-::: {.cell .code}
-``` {.python}
-```
-:::
