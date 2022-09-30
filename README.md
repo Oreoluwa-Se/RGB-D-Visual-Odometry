@@ -63,8 +63,6 @@ producing the depth image was inconsistent
     (<https://www.youtube.com/watch?v=uHbRKvD8TWg&t=7s>)
 
 ### Ros Overview:
-
-<!-- ![Ros-view.png](vertopal_d86a2d00c2214e7982182c69df2581e2/Ros-view.png) -->
 <div align=center><img src="./images/Ros-view.png" width="60%"/></div>
 
 **Image above shows the overall workflow in Ros. The backend system is
@@ -86,9 +84,7 @@ operates as a singular external thread.**
         and image cannot be updated real-time.
 
 ### Future Work: System Flow With Loop Closure
-
-<!-- ![With%20LoopClosure.png](vertopal_d86a2d00c2214e7982182c69df2581e2/With%20LoopClosure.png) -->
-<div align=center><img src="./images/WithLoopClosure.png" width="60%"/></div>
+<div align=center><img src="./images/With%20LoopClosure.png" width="60%"/></div>
 
 As mentioned earlier, loop closure allows for global landmark and pose
 estimation when a loop has been detected. A loop is detected when two
