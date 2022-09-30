@@ -84,7 +84,7 @@ operates as a singular external thread.**
         and image cannot be updated real-time.
 
 ### Future Work: System Flow With Loop Closure
-<div align=center><img src="./images/With%20LoopClosure.png" width="60%"/></div>
+<div align=center><img src="./images/WithLoopClosure.png" width="60%"/></div>
 
 As mentioned earlier, loop closure allows for global landmark and pose
 estimation when a loop has been detected. A loop is detected when two
@@ -95,7 +95,7 @@ cannot be updated real-time and image matching can be really slow
 depending on voabulary size. To this end I propose a new method of
 describing image point locations for slam.
 
-<!-- ![Feature%20Extraction.png](vertopal_d86a2d00c2214e7982182c69df2581e2/Feature%20Extraction.png) -->
+<!-- ![Feature%20Extraction.png](vertopal_d86a2d00c2214e7982182c69df2581e2/FeatureExtraction.png) -->
 <div align=center><img src="./FeatureExtraction.png" width="60%"/></div>
 
 Following this, a combination of hastables with fixed size and cosine
