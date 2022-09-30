@@ -1,0 +1,52 @@
+%YAML:1.0
+
+# general debug 
+show_point_cloud: 0 # 1-true 0-false
+sleep_time: 30 # hertz
+loop_closure: 0
+
+# from gazebo urdf model
+camera_min_depth: 0.05 #[meters]
+camera_max_depth: 3.5 #[meters]
+
+# subscription parameters
+image_queue: 1
+cam_info_queue: 1
+image_trail: 20
+
+# orb parameters
+detected_features: 1000
+scale_factor: 1.2
+level_pyramid: 8
+
+# tracking details
+num_features: 150
+num_features_init: 100
+num_features_tracking: 150
+num_features_tracking_bad: 20
+num_features_key_frame: 150
+num_active_frames: 7
+boarder: 10
+
+# poission filter parameters
+radius: 1.0
+
+# optical flow parametes
+half_patch_size: 11
+iterations: 30
+pyramids: 4
+pyr_scale: 0.5
+
+# ransac parameter
+ransac_thresh: 1 # 0-3
+ransac_percent: 0.999
+ransac_maxIter: 100
+ransac_rotation_threshold: 10
+
+# g2o parameters
+final_feats_opt_number: 10
+final_ransac_iter: 5
+chi_dof: 2
+
+# loop closure parameters
+num_occurences_for_visible: 10
