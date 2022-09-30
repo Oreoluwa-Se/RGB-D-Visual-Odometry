@@ -63,8 +63,6 @@ producing the depth image was inconsistent
     (<https://www.youtube.com/watch?v=uHbRKvD8TWg&t=7s>)
 
 ### Ros Overview:
-
-<!-- ![Ros-view.png](vertopal_d86a2d00c2214e7982182c69df2581e2/Ros-view.png) -->
 <div align=center><img src="./images/Ros-view.png" width="60%"/></div>
 
 **Image above shows the overall workflow in Ros. The backend system is
@@ -86,8 +84,6 @@ operates as a singular external thread.**
         and image cannot be updated real-time.
 
 ### Future Work: System Flow With Loop Closure
-
-<!-- ![With%20LoopClosure.png](vertopal_d86a2d00c2214e7982182c69df2581e2/With%20LoopClosure.png) -->
 <div align=center><img src="./images/WithLoopClosure.png" width="60%"/></div>
 
 As mentioned earlier, loop closure allows for global landmark and pose
@@ -99,7 +95,7 @@ cannot be updated real-time and image matching can be really slow
 depending on voabulary size. To this end I propose a new method of
 describing image point locations for slam.
 
-<!-- ![Feature%20Extraction.png](vertopal_d86a2d00c2214e7982182c69df2581e2/Feature%20Extraction.png) -->
+<!-- ![Feature%20Extraction.png](vertopal_d86a2d00c2214e7982182c69df2581e2/FeatureExtraction.png) -->
 <div align=center><img src="./FeatureExtraction.png" width="60%"/></div>
 
 Following this, a combination of hastables with fixed size and cosine
